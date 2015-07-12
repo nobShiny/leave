@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF" >
+
+    <RelativeLayout
+        android:id="@+id/top_ll"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#18C3C0" >
+
+        <View
+            android:id="@+id/form_v0"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="18dp"
+            android:background="#FFFFFF" />
+
+        <!-- 请假类别 -->
+
+        <RelativeLayout
+            android:id="@+id/leave_type"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_marginLeft="18dp" >
+
+            <ImageView
+                android:id="@+id/iv_leave_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/leave_category" />
+
+            <TextView
+                android:id="@+id/tv_leave_type"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@id/iv_leave_type"
+                android:text="@string/leave_category_text"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/iv_leave_type_j"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/gotochange" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_toLeftOf="@id/iv_leave_type_j"
+                android:gravity="right"
+                android:text="护理假"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/top_ll" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <!-- 请假人 -->
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:layout_marginLeft="18dp" >
+
+                <ImageView
+                    android:id="@+id/iv_leave_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:src="@drawable/leave_per" />
+
+                <TextView
+                    android:id="@+id/tv_leave_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_toRightOf="@id/iv_leave_name"
+                    android:text="请假人"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/et_leave_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@android:color/transparent"
+                    android:gravity="right"
+                    android:hint="三个字"
+                    android:singleLine="true"
+                    android:textColor="#9AA1AF"
+                    android:textSize="17sp" />
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/form_v1"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="18dp"
+                android:background="#EFEFF4" />
+
+            <!-- 部门 -->
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:layout_marginLeft="18dp" >
+
+                <ImageView
+                    android:id="@+id/iv_leave_dep"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:src="@drawable/leave_department" />
+
+                <TextView
+                    android:id="@+id/tv_leave_dep"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_toRightOf="@id/iv_leave_dep"
+                    android:text="部门"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/et_leave_dep"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="20dp"
+                    android:focusable="true"
+                    android:gravity="right"
+                    android:singleLine="true"
+                    android:text="市场部"
+                    android:textColor="#9AA1AF"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+
+           <!--  <View
+                android:id="@+id/form_v2"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="18dp"
+                android:background="#EFEFF4" /> -->
+
+            <View
+                android:id="@+id/form_v4"
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:background="#EFEFF4" />
+            <!-- 审批人 -->
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:layout_marginLeft="18dp" >
+
+                <ImageView
+                    android:id="@+id/iv_leave_approver"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:src="@drawable/leave_examiner" />
+
+                <TextView
+                    android:id="@+id/tv_leave_approver"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_toRightOf="@id/iv_leave_approver"
+                    android:text="审批人"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/gotoscan" />
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/form_v5"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="18dp"
+                android:background="#EFEFF4" />
+
+            <!-- ******************************************************************************* -->
+            <!-- 添加照片 -->
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:layout_marginLeft="18dp" >
+
+                <ImageView
+                    android:id="@+id/iv_leave_add_pic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:src="@drawable/leave_image" />
+
+                <TextView
+                    android:id="@+id/tv_leave_add_pic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_toRightOf="@id/iv_leave_add_pic"
+                    android:text="添加照片"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/et_leave_add_pic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="20dp"
+                    android:focusable="true"
+                    android:gravity="right"
+                    android:singleLine="true"
+                    android:text="支持最多3张图片"
+                    android:textColor="#9AA1AF" />
+
+                <GridView
+                    android:id="@+id/gv_leave_add_upload_pic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/iv_leave_add_pic"
+                    android:numColumns="3"
+                    android:visibility="invisible" >
+                </GridView>
+            </RelativeLayout>
+            <!-- ******************************************************************************* -->
+
+            <View
+                android:id="@+id/form_v3"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="18dp"
+                android:background="#EFEFF4" />
+
+            <!-- 备注 -->
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="120dp"
+                android:layout_marginLeft="18dp" >
+
+                <ImageView
+                    android:id="@+id/iv_leave_comment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:src="@drawable/leave_infodescription" />
+
+                <TextView
+                    android:id="@+id/tv_leave_comment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_toRightOf="@id/iv_leave_comment"
+                    android:text="备注"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_leave_comment"
+                    android:layout_marginLeft="39dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@android:color/transparent"
+                    android:focusable="false"
+                    android:includeFontPadding="false"
+                    android:hint="点击输入（200字以内）"
+                    android:maxLength="200"
+                    android:textColor="#9AA1AF"
+                    android:textSize="15dp" >
+                </EditText>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

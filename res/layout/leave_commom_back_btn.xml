@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/distance_40"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:id="@+id/comment_back"
+    >
+
+    <ImageView
+        android:layout_width="@dimen/distance_45"
+        android:layout_height="@dimen/distance_45"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/distance_10"
+        android:scaleType="centerInside"
+        android:src="@drawable/back"/>
+
+</LinearLayout>

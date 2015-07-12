@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">请假管理</string>
+    <string name="leave_management">请假管理</string>
+    <string name="leave_approve">请假申请</string>
+    <string name="action_settings">action_settings</string>
+    <string name="submit">提交</string>
+    <string name="leave_category_text">请假类别</string>
+
+</resources>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentTop="true"
+    android:background="#F9FAFE"
+    android:baselineAligned="false" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <!-- top start -->
+
+        <LinearLayout
+            android:id="@+id/leave_top"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/distance_45"
+            android:background="#18C3C0"
+            android:orientation="horizontal" >
+
+            <include layout="@layout/leave_commom_back_btn" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:text="我的假单"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
+
+            <ImageButton
+                android:id="@+id/leave_add_type"
+                android:layout_width="10dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:layout_weight="0.5"
+                android:background="@android:color/transparent"
+                android:src="@drawable/leave_type_add" />
+        </LinearLayout>
+        <!-- top end -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/leave_top"
+            android:orientation="vertical"
+            android:weightSum="3" >
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="2.5" >
+
+                    <ListView
+                        android:id="@+id/lv_leave_list"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:footerDividersEnabled="false" >
+                    </ListView>
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/fragment_leavetiplayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <TextView
+                        android:id="@+id/fragmentleavenoresulttip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="100dp"
+                        android:text="暂无请假记录。"
+                        android:textColor="@android:color/darker_gray"
+                        android:textSize="20sp" />
+                </RelativeLayout>
+            </FrameLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

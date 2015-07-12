@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#18C3C0"
+    android:orientation="vertical" >
+
+    <!-- top start -->
+
+    <LinearLayout
+        android:id="@+id/leave_top"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/distance_45"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal" >
+
+        <include layout="@layout/leave_commom_back_btn" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:text="@string/leave_approve"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/leave_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:background="#18C3C0"
+            android:text="@string/submit"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
+    </LinearLayout>
+    <!-- top end -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="38dp"
+        android:background="#18C3C0" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:gravity="center" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="3" >
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="20dp"
+                    android:layout_weight="1.4" >
+
+                    <TextView
+                        android:id="@+id/tv_start_date_picker"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="2015-4-30"
+                        android:textColor="#FFFFFF"
+                        android:textSize="19sp" />
+
+                    <TextView
+                        android:id="@+id/tv_start_time_picker"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_start_date_picker"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="15dp"
+                        android:gravity="center"
+                        android:text="14:00"
+                        android:textColor="#FFFFFF"
+                        android:textSize="19sp" />
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="40dp"
+                    android:layout_weight="0.2"
+                    android:text="至"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1.4" >
+
+                    <TextView
+                        android:id="@+id/tv_end_date_picker"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="2015-5-30"
+                        android:textColor="#FFFFFF"
+                        android:textSize="19sp" />
+
+                    <TextView
+                        android:id="@+id/tv_end_time_picker"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_end_date_picker"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="15dp"
+                        android:gravity="center"
+                        android:text="12:00"
+                        android:textColor="#FFFFFF"
+                        android:textSize="19sp" />
+                </RelativeLayout>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <!-- content start -->
+
+    <include layout="@layout/activity_leave_form_content" />
+    <!-- content stop -->
+
+</LinearLayout>
