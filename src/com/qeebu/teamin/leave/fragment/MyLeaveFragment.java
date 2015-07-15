@@ -44,8 +44,11 @@ public class MyLeaveFragment extends Fragment implements OnClickListener{
 		init();	
 		return view;
 	}
+	
 	private void init() {
+		
 	}
+	
 	@Override
 	public void onClick(View v) {
 		switch (v.getId()) {

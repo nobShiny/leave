@@ -53,6 +53,7 @@
                 android:src="@drawable/gotochange" />
 
             <TextView
+                android:id="@+id/tv_leave_type_name_check"
                 android:layout_width="wrap_content"
                 android:layout_height="20dp"
                 android:layout_marginTop="20dp"
@@ -110,7 +111,7 @@
                     android:hint="三个字"
                     android:singleLine="true"
                     android:textColor="#9AA1AF"
-                    android:textSize="17sp" />
+                    android:textSize="16sp" />
             </RelativeLayout>
 
             <View
@@ -159,13 +160,6 @@
                     android:textSize="16sp" />
             </RelativeLayout>
 
-           <!--  <View
-                android:id="@+id/form_v2"
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:layout_marginLeft="18dp"
-                android:background="#EFEFF4" /> -->
-
             <View
                 android:id="@+id/form_v4"
                 android:layout_width="match_parent"
@@ -174,6 +168,7 @@
             <!-- 审批人 -->
 
             <RelativeLayout
+                android:id="@+id/rl_leave_approver"
                 android:layout_width="wrap_content"
                 android:layout_height="60dp"
                 android:layout_marginLeft="18dp" >
@@ -196,12 +191,23 @@
                     android:textSize="16sp" />
 
                 <ImageView
+                    android:id="@+id/iv_jiantou"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentRight="true"
                     android:layout_marginRight="8dp"
                     android:layout_marginTop="20dp"
                     android:src="@drawable/gotoscan" />
+
+                <TextView
+                    android:id="@+id/tv_approver_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_toLeftOf="@id/iv_jiantou"
+                    android:text="刘德华"
+                    android:textColor="#9AA1AF"
+                    android:textSize="20sp" />
             </RelativeLayout>
 
             <View
@@ -215,6 +221,7 @@
             <!-- 添加照片 -->
 
             <RelativeLayout
+                android:id="@+id/rl_leave_add_pic"
                 android:layout_width="wrap_content"
                 android:layout_height="60dp"
                 android:layout_marginLeft="18dp" >
@@ -249,14 +256,21 @@
                     android:text="支持最多3张图片"
                     android:textColor="#9AA1AF" />
 
-                <GridView
-                    android:id="@+id/gv_leave_add_upload_pic"
+                <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_below="@id/iv_leave_add_pic"
-                    android:numColumns="3"
-                    android:visibility="invisible" >
-                </GridView>
+                    android:layout_below="@+id/et_leave_add_pic"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="20dp"
+                    android:orientation="vertical" >
+
+                    <GridView
+                        android:id="@+id/gv_leave_add_upload_pic"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:numColumns="3" >
+                    </GridView>
+                </LinearLayout>
             </RelativeLayout>
             <!-- ******************************************************************************* -->
 
@@ -270,9 +284,12 @@
             <!-- 备注 -->
 
             <RelativeLayout
-                android:layout_width="wrap_content"
+                android:id="@+id/rl_leave_comment"
+                android:layout_width="match_parent"
                 android:layout_height="120dp"
-                android:layout_marginLeft="18dp" >
+                android:layout_marginLeft="18dp"
+                android:focusable="true"
+                android:focusableInTouchMode="true" >
 
                 <ImageView
                     android:id="@+id/iv_leave_comment"
@@ -292,15 +309,15 @@
                     android:textSize="16sp" />
 
                 <EditText
-                    android:layout_width="wrap_content"
+                    android:id="@+id/et_leave_comment"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_below="@id/tv_leave_comment"
                     android:layout_marginLeft="39dp"
                     android:layout_marginTop="15dp"
                     android:background="@android:color/transparent"
-                    android:focusable="false"
-                    android:includeFontPadding="false"
                     android:hint="点击输入（200字以内）"
+                    android:includeFontPadding="false"
                     android:maxLength="200"
                     android:textColor="#9AA1AF"
                     android:textSize="15dp" >

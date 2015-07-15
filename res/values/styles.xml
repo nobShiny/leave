@@ -36,5 +36,10 @@
         <item name="android:textColor">#141414</item>
         <item name="android:textSize">14sp</item>
     </style>
+    <!-- leave popwindow 动画 -->
+    <style name="popwin_anim_style">  
+     <item name="android:windowEnterAnimation">@anim/leave_popwindow_show</item>  
+     <item name="android:windowExitAnimation">@anim/leave_popwindow_hide</item>  
+</style>  
 
 </resources>
