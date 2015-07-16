@@ -5,19 +5,13 @@
     android:layout_height="match_parent"
     android:orientation="vertical" >
 
-    <!-- <LinearLayout
+    <com.qeebu.teamin.leave.custom.CustomImageButton
+        android:id="@+id/leave_type_item_ib_pic"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical" > -->
-
-        <com.qeebu.teamin.leave.custom.CustomImageButton
-            android:id="@+id/leave_type_item_ib_pic"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@android:color/transparent"
-            android:scaleType="fitCenter" >
-        </com.qeebu.teamin.leave.custom.CustomImageButton>
-    <!-- </LinearLayout> -->
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter" >
+    </com.qeebu.teamin.leave.custom.CustomImageButton>
 
     <TextView
         android:id="@+id/tv_leave_type_item_name"
@@ -25,7 +19,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginTop="10dp"
-        android:text="病假申请"
+        android:text="XX申请"
         android:textColor="#3D3C45"
         android:textSize="15sp" />
 

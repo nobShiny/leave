@@ -13,6 +13,7 @@
         android:verticalSpacing="48dp"
         android:fadeScrollbars="true" 
         android:transcriptMode="alwaysScroll"
+        android:descendantFocusability="blocksDescendants"
         android:numColumns="3">
     </GridView>
     

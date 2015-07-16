@@ -32,22 +32,28 @@
             android:id="@+id/btn_myleave"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_marginTop="6dp"
             android:layout_marginBottom="8dp"
+            android:layout_marginTop="6dp"
             android:layout_weight="1"
-            android:onClick="leaveClick"
-            android:background="@drawable/myleave_btn_select" />
+            android:background="@android:color/transparent"
+            android:onClick="leaveClick" />
 
         <ImageButton
+            android:id="@+id/btn_myapprove"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_gravity="center"
-            android:layout_weight="1"
-            android:layout_marginTop="6dp"
             android:layout_marginBottom="8dp"
-            android:onClick="approveClick"
-            android:background="@drawable/myapprove_btn_select" />
+            android:layout_marginTop="6dp"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:onClick="approveClick" />
     </LinearLayout>
+
+    <!--
+    android:background="@drawable/myleave_btn_select"
+    android:background="@drawable/myapprove_btn_select"
+    -->
     <!-- bottom end -->
 
 </LinearLayout>

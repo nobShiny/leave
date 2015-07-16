@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <lint>
-    <issue id="HandlerLeak">
+    <issue id="HandlerLeak" severity="ignore">
         <ignore path="src/com/qeebu/teamin/leave/CreateNewLeave.java" />
     </issue>
     <issue id="HardcodedText" severity="ignore" />
     <issue id="RtlHardcoded" severity="ignore" />
-    <issue id="SimpleDateFormat">
+    <issue id="SimpleDateFormat" severity="ignore">
         <ignore path="src/com/qeebu/teamin/leave/CreateNewLeave.java" />
     </issue>
 </lint>

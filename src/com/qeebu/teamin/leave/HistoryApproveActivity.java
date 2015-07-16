@@ -26,8 +26,8 @@ public class HistoryApproveActivity extends Activity implements OnClickListener 
 		case R.id.comment_back:// 返回假单审批
 			intent = new Intent(this, HistoryApproveActivity.class);
 			startActivity(intent);
-			overridePendingTransition(R.anim.fade, R.anim.hold);
 			finish();
+			overridePendingTransition(android.R.anim.slide_in_left,android.R.anim.slide_out_right); 
 			break;
 
 		default:
